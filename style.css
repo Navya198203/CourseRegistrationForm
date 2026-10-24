@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  background: #e00769;
+  background: radial-gradient(
+    circle,
+    rgba(224, 7, 105, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Lato", sans-serif;
+}
+div{display: flex;justify-content: center;}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+text-align: center;
+color: white;
+}
+form {
+  width: 550px;
+  background-color:lightgreen;
+  padding: 15px 15px;
+  border:5px solid darkviolet;}
+fieldset {
+  border: 7px solid darkcyan;
+  border-radius: 20px;
+}
+legend {
+  font-family: fantasy;
+  color: orangered;
+}
+input[type="submit"] {
+ padding:5px 10px;
+  border: 1px solid white;
+  margin-left: 25px;
+}
+input[type="Reset"]{
+  padding:5px 12px;
+  border: 1px solid white;
+}
+input[required] {
+  border: 2px solid rgb(17, 236, 17);
+}
+input[optional] {
+  border: 2px solid #0000ff;
+}
+input:hover {
+background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+input:focus {
+ background-color: yellow;
+}
+input:read-only{
+    background-color:#6495ED;
+    color: azure;
+    font-weight: 700;
+}
+input + p{
+  display: none;
+}
+input:hover+p{
+  display:inline;
+  font-weight: 700;
+  font-size: 12px;
+ background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  color:white;
+  border-radius: 10px;
+}
+img{display: none;}
+

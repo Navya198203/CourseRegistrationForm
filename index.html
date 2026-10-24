@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <div>
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <table>
+            <tr>
+              <td><label for="firstname">FirstName</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="FN"
+                  placeholder="Navya"
+                  size="20"
+                  maxlength="10"
+                  required
+                />
+                <p>Enter your Name</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="surname">SurName</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="SN"
+                  placeholder="Reddy"
+                  size="20"
+                  required
+                />
+                <p>Enter your surname</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mn">Mobile Number</label></td>
+              <td>
+                <input
+                  type="tel"
+                  placeholder="Ex: 9632584710"
+                  size="20"
+                  required
+                />
+                <p>Enter your Mob.No</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email Id</label></td>
+              <td>
+                <input type="email" required />
+                <p>Enter your Email</p>
+                <img src="/check.png" alt="" />
+                <img src="/delete.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td>
+                <input type="password" required />
+                <p>Enter your password</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="confirm password">Confirm Password</label></td>
+              <td>
+                <input type="text" required />
+                <p>confirm your password</p>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">DOB</label></td>
+              <td><input type="date" required /></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender</label></td>
+              <td>
+                <input type="radio" value="Male" name="gender" />Male
+                <!-- Becoz of name attribute is same for all the 3 genders so it will select only one option at a time -->
+                <input type="radio" value="Female" name="gender" />Female
+                <input type="radio" value="Others" name="gender" />Others
+              </td>
+            </tr>
+            <tr>
+              <td><label for="select country">Select Country</label></td>
+              <td>
+                <select name="Country">
+                  <option value="Ind">INDIA</option>
+                  <option value="us">USA</option>
+                  <option value="Rus">RUSSIA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="to upload a photo">Upload Picture</label></td>
+              <td><input type="File"></td>
+            </tr>
+            <tr>
+              <td><input type="Reset" /></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Course Details:</legend>
+          <table>
+          <tr>
+            <td><label for="To select course">Select Course</label></td>
+            <td>
+              <select name="Course">
+                <option value="PWSD">Python Full Stack</option>
+                <option value="JWSD">Java Full Stack</option>
+                <option value="MERN">MERN</option>
+                <option value="DS">Data Science</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Delivery mode">Delivery Mode</label></td>
+            <td>
+              <input type="radio" name="mod" />ONLINE
+              <input type="radio" name="mod" />OFFLINE
+            </td>
+          </tr>
+          <tr>
+            <td><label for="to post comments">Comments</label></td>
+            <td><textarea name="" rows="5" cols="45"></textarea></td>
+          </tr>
+        </table>
+</fieldset>
+        <br />
+        <input type="submit" name="" id="" />
+      </form>
+    </div>
+  </body>
+</html>
